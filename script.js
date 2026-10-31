@@ -16,3 +16,15 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
 
   window.open(url, "_blank", "noopener");
 });
+
+const toTop = document.getElementById("to-top");
+
+// Affiche le bouton après 400 px de défilement
+window.addEventListener("scroll", () => {
+  toTop.classList.toggle("show", window.scrollY > 400);
+});
+
+// Remonte en douceur (grâce au scroll-behavior de html)
+toTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0 });
+});
