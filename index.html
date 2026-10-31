@@ -10,6 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400&display=swap"
       rel="stylesheet"
     />
+    <!-- Logos des technologies (Devicon) et icônes des réseaux (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -20,11 +29,11 @@
           <ul>
             <li><a href="#about">ABOUT</a></li>
             <li>
-              <a href="#experience" class="flip" data-text="LET GO"
+              <a href="#skills" class="flip" data-text="LET GO"
                 ><span>SKILLS</span></a
               >
             </li>
-            <li><a href="#education">PROJECTS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
             <li>
               <a href="#contact" class="flip" data-text="OUTLOOK"
                 ><span>CONTACT</span></a
@@ -62,56 +71,113 @@
           n'hésitez pas à me contacter pour travailler ensemble.
         </p>
       </section>
-      <div>
-        <div>
-          <h3>FONT END</h3>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div>
-          <h3>BACK END</h3>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
 
-      <div>
-        <h4>PROJECTS</h4>
-        <div>MEDIMAGEIA</div>
-        <div>GESTION DE STOCKS</div>
-      </div>
+      <section class="block" id="skills">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>FRONT END</h3>
+            <ul class="stack">
+              <li><i class="devicon-html5-plain colored"></i><span>HTML</span></li>
+              <li><i class="devicon-css3-plain colored"></i><span>CSS</span></li>
+              <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+              <li><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></li>
+              <li><i class="devicon-angularjs-plain colored"></i><span>Angular</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>BACK END</h3>
+            <ul class="stack">
+              <li><i class="devicon-php-plain colored"></i><span>PHP</span></li>
+              <li><i class="devicon-laravel-plain colored"></i><span>Laravel</span></li>
+              <li><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></li>
+              <li><i class="devicon-mysql-plain colored"></i><span>MySQL</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <div>
-        <h4>CONTACT</h4>
-        <label>Entrez votre email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          minlength="4"
-          maxlength="8"
-          size="10"
-        />
-      </div>
+      <section class="block" id="projects">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-img">
+              <img src="assets/medimageia.png" alt="Capture de MedImageIA" />
+            </div>
+            <div class="card-body">
+              <h3>MedImageIA</h3>
+              <p>Décris ici le projet en une ou deux phrases.</p>
+              <ul class="tags">
+                <li>Techno 1</li>
+                <li>Techno 2</li>
+              </ul>
+              <a
+                class="btn"
+                href="https://github.com/TON-PSEUDO/medimageia"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-github"></i> Voir sur GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="assets/stocks.png" alt="Capture de la gestion de stocks" />
+            </div>
+            <div class="card-body">
+              <h3>Gestion de stocks</h3>
+              <p>Décris ici le projet en une ou deux phrases.</p>
+              <ul class="tags">
+                <li>Techno 1</li>
+                <li>Techno 2</li>
+              </ul>
+              <a
+                class="btn"
+                href="https://github.com/TON-PSEUDO/gestion-stocks"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-github"></i> Voir sur GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" id="contact">
+        <h2 class="section-title">CONTACT</h2>
+        <form class="contact" id="contact-form">
+          <p class="contact-intro">
+            Laissez-moi un message : il s'ouvrira dans Outlook, prêt à être
+            envoyé.
+          </p>
+          <label for="name">Votre nom</label>
+          <input type="text" id="name" name="name" required />
+          <label for="subject">Objet</label>
+          <input type="text" id="subject" name="subject" required />
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <button type="submit" class="btn">
+            <i class="fa-regular fa-envelope"></i> Envoyer avec Outlook
+          </button>
+        </form>
+      </section>
     </main>
 
     <footer>
-      <div>
-        <h5>LIENS EXTERNES</h5>
-        <div>WHATSAPP</div>
-        <div>TELEGRAM</div>
-        <div>DISCORD</div>
-        <div>LINKEDIN</div>
-        <div>X</div>
-        <div>REDDIT</div>
-      </div>
-      <p>&copy; 2026 Your Name. All rights reserved.</p>
+      <p class="footer-title">LIENS EXTERNES</p>
+      <ul class="social">
+        <li><a href="#" style="--c: #0a66c2" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="#" style="--c: #25d366" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="#" style="--c: #ff4500" aria-label="Reddit" target="_blank" rel="noopener"><i class="fa-brands fa-reddit-alien"></i></a></li>
+        <li><a href="#" style="--c: #333" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#" style="--c: #26a5e4" aria-label="Telegram" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="#" style="--c: #5865f2" aria-label="Discord" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="#" style="--c: #ff0000" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+      <p>&copy; 2026 Freddy. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
