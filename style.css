@@ -159,7 +159,6 @@ nav a:hover {
   padding: 3rem;
   background: #f9f8f8;
   font-size: 1.2rem;
-  line-height: 1.8;
   box-shadow: 0 8px 24px rgba(52, 51, 51, 0.15);
 }
 
@@ -187,7 +186,6 @@ nav a:hover {
   color: #000;
 }
 
-/* ===== Skills : FRONT END et BACK END côte à côte ===== */
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
