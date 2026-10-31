@@ -160,18 +160,17 @@ nav a:hover {
   padding: 4.0rem 3rem;
   background: #f9f8f8;
   border-radius: 0.9rem;
+  font-size: 1.20rem;
   box-shadow: 0 8px 24px rgba(52, 51, 51, 0.15);
   scroll-margin-top: 6rem;
 }
 
 .about::before {
-  content: "À PROPOS";
+  content: "ABOUT";
   display: block;
-  margin-bottom: 1.2rem;
-  padding-bottom: 0.8rem;
   border-bottom: 1px solid #333;
   font-family: "Inter", sans-serif;
-  font-size: 0.85rem;
+  font-size: 1.0rem;
   letter-spacing: 0.15em;
-  color: #aaa;
+  color: #000000;
 }
