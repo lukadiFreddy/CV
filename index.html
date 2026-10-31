@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de Freddy, développeur web : Angular, Laravel, Node.js, Java. Projets MedImageIA et gestion de stocks." />
     <title>Freddy, Développeur Web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +25,19 @@
   <body>
     <main>
       <header>
-        <nav>
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="overlay" id="overlay"></div>
+
+        <nav id="menu">
           <ul>
             <li><a href="#about">ABOUT</a></li>
             <li>
@@ -43,14 +56,11 @@
       </header>
 
       <section class="sectionProfil">
-      <!-- <div> -->
-          <img
-            src="assets/profil.png"
-            alt="Photo de profil"
-            class="profil"
-            title=""
-          />
-        <!-- </div> -->
+        <img
+          src="assets/profil.png"
+          alt="Photo de profil"
+          class="profil"
+        />
 
         <div class="intro-text">
           <p class="intro-label">Bonjour, je suis Freddy</p>
@@ -63,15 +73,18 @@
         </div>
       </section>
 
-      <section class="about" id="about">
+      <section class="block" id="about">
+        <h2 class="section-title">ABOUT</h2>
+        <div class="about">
         <p>
           Depuis 3 ans, je conçois des applications web fiables, de l'interface
           utilisateur jusqu'à la base de données. Je travaille avec Angular,
-          Laravel, Node.js et MySQL, avec un objectif simple : créer des outils
+          Laravel, Node.js, Java et MySQL, avec un objectif simple : créer des outils
           clairs, rapides et vraiment utiles pour ceux qui les utilisent.
           Découvrez mes projets, comme MedImageIA et ma gestion de stocks, et
           n'hésitez pas à me contacter pour travailler ensemble.
         </p>
+      </div>
       </section>
 
       <section class="block" id="skills">
@@ -103,6 +116,9 @@
           <div class="skill-group">
             <h3>BACK END</h3>
             <ul class="stack">
+              <li>
+                <i class="devicon-java-plain colored"></i><span>Java</span>
+              </li>
               <li><i class="devicon-php-plain colored"></i><span>PHP</span></li>
               <li>
                 <i class="devicon-laravel-plain colored"></i
@@ -124,7 +140,11 @@
         <div class="cards">
           <article class="card">
             <div class="card-img">
-              <img src="assets/medimageia.png" alt="Capture de MedImageIA" />
+              <img
+                src="assets/medimageia.png"
+                alt="Capture de MedImageIA"
+                loading="lazy"
+              />
             </div>
             <div class="card-body">
               <h3>MedImageIA</h3>
@@ -148,6 +168,7 @@
               <img
                 src="assets/stocks.png"
                 alt="Capture de la gestion de stocks"
+                loading="lazy"
               />
             </div>
             <div class="card-body">
@@ -194,7 +215,7 @@
       <ul class="social">
         <li>
           <a
-            href="https://www.linkedin.com/in/freddy-lukadi-2b0a59411?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            href="https://www.linkedin.com/in/freddy-lukadi-2b0a59411"
             style="--c: #0a66c2"
             aria-label="LinkedIn"
             target="_blank"
@@ -214,7 +235,7 @@
         </li>
         <li>
           <a
-            href="https://www.reddit.com/u/fred_lukadi/s/iaTMCnv5oA"
+            href="https://www.reddit.com/user/fred_lukadi"
             style="--c: #ff4500"
             aria-label="Reddit"
             target="_blank"
@@ -224,7 +245,7 @@
         </li>
         <li>
           <a
-            href="https://www.reddit.com/u/fred_lukadi/s/iaTMCnv5oA"
+            href="https://x.com/LukadiFreddy007"
             style="--c: #333"
             aria-label="X (Twitter)"
             target="_blank"
@@ -254,7 +275,7 @@
         </li>
         <li>
           <a
-            href="https://youtube.com/@freddy_lukadi?si=jIAjq2u2Q7lGhxYA"
+            href="https://youtube.com/@freddy_lukadi"
             style="--c: #ff0000"
             aria-label="YouTube"
             target="_blank"
